@@ -1,0 +1,73 @@
+@import '~bootstrap/scss/bootstrap.scss';
+
+@import "./assets/css/styleguide.scss";
+
+
+@font-face {
+    font-family: 'Avenir Next';
+    src: local('Avenir Next'),
+     url('./assets/avenir-next/AvenirLTStd-Light.otf') format('truetype');
+    font-weight: $normal;
+}
+
+body {
+    font-family: 'Avenir Next';
+    color: $color1;
+
+    .user-profile {
+        h5 {
+            color: $color1;
+        }
+        p {
+            color: rgba($color1, 0.5);
+            font-size: $small;
+        }
+    }
+
+    .services {
+        .service-heading {
+            letter-spacing: 0.15px;
+        }
+        .service-item {
+            letter-spacing: 0.4px;
+            .image-container {
+                background: $color2;
+                border-radius: 4px;
+                text-align: center;
+            }
+            h6 {
+                font-weight: $bold;
+                font-size: $small;
+            }
+            .price {
+                font-weight: $bold;
+                font-size: $small;
+                color: rgba($color1, 0.5);
+            }
+        }
+    }
+
+    .wallet-balance-status {
+        background: rgba(224, 205, 209, 0.5);
+        border: 1px solid #E0CDD1;
+        border-radius: 4px;
+        text-align: center;
+        h6 {
+            font-weight: $bold;
+            font-size: $small;
+            letter-spacing: 0.4px;
+        }
+        p {
+            letter-spacing: 0.15px;
+            line-height: 24px;
+        }
+    }
+
+    .wallet-legend {
+        font-size: $smaller;
+        font-weight: $bold;
+        line-height: 14px;
+        color: rgba($color1, 0.5);
+    }
+
+}
