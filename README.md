@@ -1,4 +1,4 @@
-# HOME - Cleansing
+# HOME - Cleaning
 
 Integrated dashboard screen based on figma design link provided in react web application. Used bootstrap grid to make screen mobile first.
 
