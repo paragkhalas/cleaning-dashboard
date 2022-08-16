@@ -1,0 +1,70 @@
+{
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false,
+    "requireConfigFile": false
+  },
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "prefer-promise-reject-errors": [
+      "off"
+    ],
+    "react/jsx-filename-extension": [
+      "off"
+    ],
+    "react/prop-types": [
+      "off"
+    ],
+    "no-return-assign": [
+      "off"
+    ],
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": [
+          "arrow-function",
+          "function-declaration"
+        ],
+        "unnamedComponents": "arrow-function",
+      }
+    ],
+    "arrow-body-style": [
+      "off"
+    ],
+    "react/no-unstable-nested-components": [
+      "off"
+    ],
+    "react/destructuring-assignment": [
+      "off",
+      "always",
+      {
+        "ignoreClassFields": true,
+        "destructureInSignature": "ignore"
+      }
+    ],
+    "jsx-a11y/click-events-have-key-events": [
+      "off"
+    ],
+    "react/jsx-props-no-spreading": [
+      "off"
+    ],
+    "react/no-array-index-key": [
+      "off"
+    ]
+  }
+}

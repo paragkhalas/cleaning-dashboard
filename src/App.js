@@ -20,7 +20,7 @@ function App() {
   const [meals] = useState([meal1, meal2]);
 
   return (
-    <div className='container mt-5'>
+    <div className="container mt-5">
       <WelcomeService services={services} />
       <Wallet />
       <Menu />
