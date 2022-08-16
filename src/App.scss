@@ -1,7 +1,5 @@
 @import '~bootstrap/scss/bootstrap.scss';
-
 @import "./assets/css/styleguide.scss";
-
 
 @font-face {
     font-family: 'Avenir Next';
@@ -14,13 +12,45 @@ body {
     font-family: 'Avenir Next';
     color: $color1;
 
+    .white-clr {
+        color: $white;
+    }
+
+    .btn {
+        padding: 4px 10px;
+        font-size: $small-font;
+        font-weight: $bold;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+    }
+
+    .btn-grey {
+        background-color: $color10;
+    }
+
+    .section-heading {
+        line-height: 24px;
+        letter-spacing: 0.15px;
+    }
+
+    .description {
+        font-size: $small-font;
+        line-height: 20px;
+        letter-spacing: 0.15px;
+    }
+
     .user-profile {
         h5 {
             color: $color1;
+            line-height: 32px;
+            font-weight: $bolder;
+            letter-spacing: 0.15px;
         }
         p {
             color: rgba($color1, 0.5);
-            font-size: $small;
+            font-size: $extra-small-font;
+            line-height: 20px;
+            letter-spacing: 0.4px;
         }
     }
 
@@ -37,37 +67,159 @@ body {
             }
             h6 {
                 font-weight: $bold;
-                font-size: $small;
+                font-size: $extra-small-font;
+                line-height: 20px;
             }
             .price {
                 font-weight: $bold;
-                font-size: $small;
+                font-size: $extra-small-font;
                 color: rgba($color1, 0.5);
             }
         }
     }
 
     .wallet-balance-status {
-        background: rgba(224, 205, 209, 0.5);
-        border: 1px solid #E0CDD1;
+        background: rgba($color3, 0.5);
+        border: 1px solid $color3;
         border-radius: 4px;
         text-align: center;
         h6 {
             font-weight: $bold;
-            font-size: $small;
+            font-size: $extra-small-font;
             letter-spacing: 0.4px;
         }
         p {
-            letter-spacing: 0.15px;
+            font-size: $base-font;
             line-height: 24px;
         }
     }
 
     .wallet-legend {
-        font-size: $smaller;
+        font-size: $double-extra-small-font;
         font-weight: $bold;
         line-height: 14px;
         color: rgba($color1, 0.5);
+    }
+
+    .navigation-container {
+        position: relative;
+        .nav-bg-image {
+            background-image: url('./assets/images/user-background.png');
+            min-height: 459px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 4px;
+            position: relative;
+            .image-details {
+                position:absolute;
+                bottom: 0;
+                padding: 0px 24px 16px 24px;
+                .btn-cleaning {
+                    border: 1px solid $color5;
+                    color: $color5;
+                }
+                @media only screen and (min-width: 750px) {
+                    left: 50%;
+                    margin-left: -250px;
+                }
+            }
+        }
+        nav {
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+            background-color: $color2;
+            border-top: 1px solid $color4;
+            top: 30%;
+            .menu-item {
+                float: left;
+                text-align: center;
+                padding: 21px 42px;
+                text-decoration: none;
+                font-weight: $bold;
+                font-size: $small-font;
+                letter-spacing: 0.1px;
+                color: rgba($color1, 0.5);
+                &.active {
+                    border-bottom: 2px solid $color1;
+                    color: $color1;
+                    font-weight: $bolder;
+                }
+              }
+        }
+    }
+    
+    .white-bg-section {
+        h6 {
+            line-height: 28px;
+        }
+        .btn-chores {
+            background-color: $color6;
+        }
+    }
+
+    .rating-section {
+        background: $color1;
+        border-radius: 4px;
+        .star-rating {
+            span {
+                margin-right: 4px;
+            }
+        }
+        .small-fonts {
+            font-size: $extra-small-font;
+            font-weight: $bold;
+            line-height: 20px;
+            letter-spacing: 0.4px;
+        }
+    }
+
+    .treat-section {
+        .card {
+            background: $color7;
+            border-radius: 4px;
+            border: 0;
+            .treat-bg-image {
+                background-image: url('./assets/images/treat.png');
+                min-height: 350px;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .card-body {
+                background: linear-gradient(90deg, $color8 76.56%, $color9 100%);
+            }
+        }
+    }
+
+    .covid-section {
+        background: $color11;
+        border-radius: 4px;
+        .btn-link {
+            color: $color1;
+            font-weight: $bolder;
+            padding-left: 0;
+            text-decoration: none;
+        }
+    }
+
+    .footer-menu {
+        align-items: center;
+        justify-content: center;
+        .nav-item {
+            margin: 8px;
+            .nav-link {
+                color: $color1;
+                font-size: $large-size;
+                font-weight: $bolder;
+                line-height: 32px;
+                letter-spacing: 0.15px;
+                &.active {
+                    color: $color12;
+                }
+            }
+        }
     }
 
 }
